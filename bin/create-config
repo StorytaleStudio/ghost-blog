@@ -49,11 +49,13 @@ function createConfig() {
     mail: {
       transport: "SMTP",
       options: {
-        service: "Mailgun",
+        port: 587, 
+        host: process.env.SMTPHOST,
+        secureConnection: false,
         auth: {
-          user: process.env.MAILGUN_SMTP_LOGIN,
-          pass: process.env.MAILGUN_SMTP_PASSWORD,
-        },
+          user: process.env.MAILUSE,
+          pass: process.env.MAILPASS
+        }
       },
     },
     fileStorage: fileStorage,

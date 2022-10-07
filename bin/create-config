@@ -49,8 +49,8 @@ function createConfig() {
     mail: {
       transport: "SMTP",
       options: {
-        port: 465, 
-        secure: true,
+        port: 567, 
+        secure: false,
         host: process.env.SMTPHOST,
         secureConnection: false,
         auth: {

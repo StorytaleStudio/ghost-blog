@@ -51,7 +51,6 @@ function createConfig() {
       options: {
         port: 587, 
         host: process.env.SMTPHOST,
-        secureConnection: false,
         auth: {
           user: process.env.MAILUSE,
           pass: process.env.MAILPASS

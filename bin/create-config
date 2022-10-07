@@ -47,6 +47,7 @@ function createConfig() {
       transports: ["stdout"],
     },
     mail: {
+      from: process.env.MAILUSE,
       transport: "SMTP",
       options: {
         port: 587, 
